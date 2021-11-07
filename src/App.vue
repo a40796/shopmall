@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <button class="logout" @click.prevent="logOut">Log out</button>
     <router-view />
   </div>
 </template>
