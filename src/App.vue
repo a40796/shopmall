@@ -13,6 +13,7 @@ export default {
       const api = `${process.env.APIPATH}/logout`;
       this.$http.post(api).then((res)=>{
         console.log(res.data);
+        this.$router.push('/login');
       })
     }
   }

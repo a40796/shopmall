@@ -40,7 +40,12 @@ export default {
       this.$http.post(api,vm.loginObj).then((response) => {
       console.log(response.data.success)
         if(response.data.success === true){
-          this.$router.push('/');
+           const token = response.data.token;
+           const expired = response.data.expired;
+           document.cookie = `hexToken=${token};expires=${new Date(expired)};`;
+           const replace_token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+           this.$http.defaults.headers.common.Authorization = `${replace_token}`;
+           this.$router.push('/');
         }
   })
     }

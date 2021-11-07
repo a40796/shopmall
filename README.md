@@ -1,10 +1,5 @@
 # shop-project
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
 # install dependencies
 npm install
 
@@ -14,8 +9,6 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# login and vue-router
+https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%AE%88%E5%8D%AB
+https://router.vuejs.org/zh/guide/advanced/meta.html
