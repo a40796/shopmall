@@ -45,7 +45,7 @@ export default {
            document.cookie = `hexToken=${token};expires=${new Date(expired)};`;
            const replace_token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
            this.$http.defaults.headers.common.Authorization = `${replace_token}`;
-           this.$router.push('/');
+           this.$router.push('/admin/products');
         }
   })
     }

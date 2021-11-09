@@ -14,12 +14,12 @@ export default new Router({
       path: '*',
       redirect:'/login'
     },
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
-      meta: { requiresAuth: true }
-    },
+    // {
+    //   path: '/',
+    //   name: 'HelloWorld',
+    //   component: HelloWorld,
+    //   meta: { requiresAuth: true }
+    // },
     {
       path: '/login',
       name: 'Login',
